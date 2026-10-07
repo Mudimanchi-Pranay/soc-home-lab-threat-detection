@@ -1,0 +1,47 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Credentials and private keys
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_rsa.pub
+
+# Virtual machine files
+*.ova
+*.ovf
+*.vmdk
+*.vdi
+*.vbox
+*.vmem
+
+# Local lab exports
+logs/
+captures/
+pcaps/
