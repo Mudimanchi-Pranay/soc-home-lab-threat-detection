@@ -1,157 +1,141 @@
-# Lab Screenshots
+# Lab Screenshots & Visual Documentation
 
 ## Overview
 
-This directory is intended to contain screenshots documenting the SOC home lab environment, security monitoring activities, and investigation workflow.
+This directory contains visual documentation related to the SOC Home Lab.
 
-Screenshots can be added when available to provide visual evidence of the lab components and security analysis process.
+The original lab environment is no longer available locally, so historical screenshots from the original environment could not be recovered.
+
+To avoid presenting recreated material as historical evidence, the visual references in this section are clearly identified as **illustrative representations** of the lab components and investigation workflow.
 
 ---
 
-## Recommended Screenshot Categories
+## Lab Architecture
 
-### 1. Lab Architecture
+### Architecture Overview
 
-Screenshots showing the overall lab environment or network topology.
+![SOC Lab Architecture](./architecture-lab-topology.png)
 
-Example:
+**Description:**  
+Illustrative representation of the SOC home lab architecture showing network security, endpoint telemetry, threat detection, and investigation components.
+
+---
+
+## pfSense
+
+### pfSense Dashboard
+
+![pfSense Dashboard](./pfsense-dashboard.png)
+
+**Description:**  
+Illustrative representation of a pfSense dashboard used for network and firewall visibility.
+
+### pfSense Firewall Logs
+
+![pfSense Firewall Logs](./pfsense-firewall-logs.png)
+
+**Description:**  
+Illustrative representation of firewall log information that can be reviewed during network security investigations.
+
+---
+
+## Sysmon
+
+### Sysmon Installation
+
+![Sysmon Installation](./sysmon-installation.png)
+
+**Description:**  
+Illustrative representation of Sysmon installation and endpoint monitoring setup.
+
+### Sysmon Event Logs
+
+![Sysmon Event Logs](./sysmon-event-logs.png)
+
+**Description:**  
+Illustrative representation of Sysmon events available for endpoint investigation.
+
+### Sysmon Process Creation Event
+
+![Sysmon Process Create Event](./sysmon-process-create.png)
+
+**Description:**  
+Illustrative representation of endpoint process creation telemetry used during security investigation.
+
+---
+
+## CrowdSec
+
+### CrowdSec Overview
+
+![CrowdSec Overview](./crowdsec-metrics.png)
+
+**Description:**  
+Illustrative representation of CrowdSec security monitoring and threat detection information.
+
+### CrowdSec Alerts
+
+![CrowdSec Alerts](./crowdsec-alerts.png)
+
+**Description:**  
+Illustrative representation of CrowdSec alerts generated during security monitoring.
+
+### CrowdSec Scenario Status
+
+![CrowdSec Scenarios](./crowdsec-scenarios.png)
+
+**Description:**  
+Illustrative representation of enabled CrowdSec detection scenarios.
+
+---
+
+## Visual Documentation Workflow
+
+The visual references correspond to the main components documented throughout this repository:
 
 ```text
-screenshots/
-└── architecture/
+                    SOC Home Lab
+                         |
+        +----------------+----------------+
+        |                |                |
+        v                v                v
+     pfSense           Sysmon          CrowdSec
+        |                |                |
+        v                v                v
+ Network Evidence   Endpoint Data   Threat Detection
+        |                |                |
+        +----------------+----------------+
+                         |
+                         v
+                 Evidence Correlation
+                         |
+                         v
+                   Investigation
+                         |
+                         v
+                  IOC Analysis
 ```
 
 ---
 
-### 2. pfSense
+## Screenshot Categories
 
-Screenshots related to firewall and network security monitoring.
-
-Example:
-
-```text
-screenshots/
-└── pfsense/
-```
-
-Potential screenshots include:
-
-- Firewall configuration
-- Network monitoring
-- Security logs
-- Relevant network activity
+| Category | Visual Reference |
+|---|---|
+| Architecture | Lab topology |
+| Network Security | pfSense dashboard and firewall logs |
+| Endpoint Security | Sysmon installation and events |
+| Threat Detection | CrowdSec monitoring and alerts |
+| Investigation | Endpoint and network evidence |
 
 ---
 
-### 3. Sysmon
+## Important Note
 
-Screenshots demonstrating endpoint telemetry and security event analysis.
+The visuals in this directory are **illustrative reference images** created to communicate the architecture and workflow of the project.
 
-Example:
+They are **not claimed to be historical screenshots from the original lab environment**.
 
-```text
-screenshots/
-└── sysmon/
-```
+No fabricated screenshots are presented as actual historical evidence.
 
-Potential screenshots include:
-
-- Sysmon installation/configuration
-- Endpoint telemetry
-- Security events
-- Relevant investigation evidence
-
----
-
-### 4. CrowdSec
-
-Screenshots related to defensive threat detection.
-
-Example:
-
-```text
-screenshots/
-└── crowdsec/
-```
-
-Potential screenshots include:
-
-- CrowdSec configuration
-- Detection information
-- Security events
-- Relevant defensive activity
-
----
-
-### 5. Attack Simulations
-
-Screenshots documenting controlled security exercises.
-
-Example:
-
-```text
-screenshots/
-└── attack-simulations/
-```
-
-Screenshots should only contain information from the controlled lab environment.
-
----
-
-### 6. Investigations
-
-Screenshots showing relevant investigation and analysis activities.
-
-Example:
-
-```text
-screenshots/
-└── investigations/
-```
-
-Potential screenshots include:
-
-- Log analysis
-- Evidence correlation
-- IOC identification
-- Investigation findings
-
----
-
-## Screenshot Guidelines
-
-When adding screenshots to this repository:
-
-- Remove or hide unnecessary personal information
-- Do not expose passwords, tokens, API keys, or credentials
-- Avoid publishing sensitive system information
-- Use clear and readable screenshots
-- Add a short description for each screenshot
-- Keep screenshots relevant to the documented workflow
-
----
-
-## Screenshot Naming Convention
-
-Use descriptive filenames.
-
-Examples:
-
-```text
-pfsense-network-monitoring.png
-sysmon-endpoint-telemetry.png
-crowdsec-detection.png
-attack-simulation.png
-ioc-analysis.png
-incident-investigation.png
-```
-
----
-
-## Current Status
-
-The original lab environment is no longer available locally, so historical screenshots are not currently included.
-
-Screenshots may be added later if original lab evidence is recovered.
-
-No fabricated screenshots or simulated evidence are included in this repository.
+If original screenshots from the lab are recovered in the future, they can replace the illustrative references.
