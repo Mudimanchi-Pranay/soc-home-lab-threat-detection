@@ -10,7 +10,7 @@ To avoid presenting recreated material as historical evidence, the visual refere
 
 ---
 
-## Lab Architecture
+## 1. Lab Architecture
 
 ### Architecture Overview
 
@@ -21,7 +21,7 @@ Illustrative representation of the SOC home lab architecture showing network sec
 
 ---
 
-## pfSense
+## 2. pfSense
 
 ### pfSense Dashboard
 
@@ -39,7 +39,7 @@ Illustrative representation of firewall log information that can be reviewed dur
 
 ---
 
-## Sysmon
+## 3. Sysmon
 
 ### Sysmon Installation
 
@@ -64,7 +64,7 @@ Illustrative representation of endpoint process creation telemetry used during s
 
 ---
 
-## CrowdSec
+## 4. CrowdSec
 
 ### CrowdSec Overview
 
@@ -89,7 +89,7 @@ Illustrative representation of enabled CrowdSec detection scenarios.
 
 ---
 
-## Visual Documentation Workflow
+## 5. Visual Investigation Workflow
 
 The visual references correspond to the main components documented throughout this repository:
 
@@ -113,12 +113,12 @@ The visual references correspond to the main components documented throughout th
                    Investigation
                          |
                          v
-                  IOC Analysis
+                    IOC Analysis
 ```
 
 ---
 
-## Screenshot Categories
+## 6. Screenshot Categories
 
 | Category | Visual Reference |
 |---|---|
